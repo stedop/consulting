@@ -11,7 +11,8 @@
     "test": "echo \"No test specified\" && exit 0",
     "dev": "quasar dev",
     "build": "quasar build",
-    "run": "quasar serve"
+    "start": "node server.js",
+    "heroku-postbuild": "yarn && yarn build"
   },
   "dependencies": {
     "@quasar/cli": "^2.4.1",
